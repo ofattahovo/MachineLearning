@@ -68,7 +68,7 @@ model.add(MaxPooling2D(pool_size=(2, 2)))
 #第三个卷积层，16个卷积核，每个卷积核大小3*3
 #激活函数用tanh
 #采用maxpooling，poolsize为(2,2)
-model.add(Convolution2D(16, 3, 3, border_mode='valid')) 
+model.add(Convolution2D(16, 4, 4, border_mode='valid')) 
 model.add(Activation('tanh'))
 model.add(MaxPooling2D(pool_size=(2, 2)))
 
